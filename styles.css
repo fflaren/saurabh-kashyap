@@ -944,11 +944,18 @@ b,strong{ font-weight:600; }
 .signoff figcaption span{ display:block; color:var(--bone-mute); letter-spacing:.1em; margin-top:.4em; }
 
 .colophon__act{
-  display:flex; flex-wrap:wrap; gap:var(--s3);
+  display:flex; flex-direction:column; align-items:flex-start; gap:var(--s5);
   margin-top:clamp(32px,4.5vw,52px);
   padding-bottom:clamp(40px,6vw,72px);
   border-bottom:1px solid var(--rule-ink);
 }
+.contact{ display:flex; flex-direction:column; align-items:flex-start; gap:10px; max-width:100%; }
+.contact__label{
+  font:500 .625rem/1 var(--mono); letter-spacing:.18em; text-transform:uppercase;
+  color:var(--verm-ink);
+}
+.contact .btn{ max-width:100%; width:100%; white-space:normal; text-align:left; overflow-wrap:anywhere; }
+@media (min-width:520px){ .contact .btn{ width:auto; } }
 .colophon__meta{
   display:grid; gap:var(--s5) var(--s6);
   padding-block:clamp(32px,4.5vw,48px);
