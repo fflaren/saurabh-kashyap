@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" data-ground="ink">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saurabh Kashyap — The Variance Report</title>
+<meta name="description" content="Saurabh Kashyap — financial planning, costing and budgeting analyst. IIM Shillong. A record of finding the distance between plan and actual, and closing it inside the cycle.">
+<meta name="author" content="Saurabh Kashyap">
+<meta name="theme-color" content="#101317">
+<meta name="color-scheme" content="only light">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Saurabh Kashyap — The Variance Report">
+<meta property="og:description" content="Financial planning, costing and budgeting. Two analyst engagements, six business units, five cost centres — and a method for finding the gap between plan and actual.">
+<meta property="og:image" content="assets/portrait-900.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" type="image/webp"
+      imagesrcset="assets/portrait-560.webp 373w, assets/portrait-900.webp 599w, assets/portrait-1400.webp 933w"
+      imagesizes="(max-width:959px) 100vw, min(33vw, 450px)">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js','preload');</script>
+</head>
+
+<body>
+<a class="skip" href="#method">Skip to content</a>
+
+<!-- ─────────────────────────  FIXED CHROME  ───────────────────────── -->
+<div class="progress" aria-hidden="true"><span class="progress__fill" id="progressFill"></span></div>
+
+<header class="bar" id="bar">
+  <a class="bar__mark" href="#cover">
+    <span class="bar__initials" aria-hidden="true">SK</span>
+    <span class="bar__name">Saurabh Kashyap</span>
+    <span class="bar__sep" aria-hidden="true">/</span>
+    <span class="bar__doc">The Variance Report</span>
+  </a>
+  <div class="bar__actions">
+    <a class="btn btn--ghost" href="assets/Saurabh-Kashyap-Resume.pdf" download>
+      Résumé
+      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M8 1v10M4 7.5 8 11.5l4-4M2 14.5h12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+    </a>
+    <button class="btn btn--contents" id="contentsBtn" aria-expanded="false" aria-controls="contentsSheet">
+      <span>Contents</span>
+      <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M1.5 3.5h13M1.5 8h13M1.5 12.5h13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- desktop margin rail -->
+<nav class="rail" aria-label="Report sections">
+  <ol class="rail__list">
+    <li><a href="#method"      data-rail="method"><i>01</i><span>The Method</span></a></li>
+    <li><a href="#ledger"      data-rail="ledger"><i>02</i><span>The Ledger</span></a></li>
+    <li><a href="#field"       data-rail="field"><i>03</i><span>The Field</span></a></li>
+    <li><a href="#instruments" data-rail="instruments"><i>04</i><span>Instruments</span></a></li>
+    <li><a href="#origin"      data-rail="origin"><i>05</i><span>Origin</span></a></li>
+    <li><a href="#record"      data-rail="record"><i>06</i><span>The Record</span></a></li>
+    <li><a href="#colophon"    data-rail="colophon"><i>07</i><span>Colophon</span></a></li>
+  </ol>
+</nav>
+
+<!-- mobile contents sheet -->
+<div class="sheet" id="contentsSheet" hidden>
+  <div class="sheet__panel" role="dialog" aria-modal="true" aria-label="Contents">
+    <p class="sheet__head"><span>Contents</span><button class="sheet__close" id="sheetClose" aria-label="Close contents">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+    </button></p>
+    <ol class="sheet__list">
+      <li><a href="#method"><i>01</i>The Method</a></li>
+      <li><a href="#ledger"><i>02</i>The Ledger</a></li>
+      <li><a href="#field"><i>03</i>The Field</a></li>
+      <li><a href="#instruments"><i>04</i>Instruments</a></li>
+      <li><a href="#origin"><i>05</i>Origin</a></li>
+      <li><a href="#record"><i>06</i>The Record</a></li>
+      <li><a href="#colophon"><i>07</i>Colophon</a></li>
+    </ol>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ═════════════════════════  00 · COVER  ═════════════════════════ -->
+<section class="cover" id="cover" data-section data-bg="ink">
+  <div class="cover__grid">
+
+    <div class="cover__type">
+      <p class="cover__meta" data-seq="1">
+        <span>The&nbsp;Variance&nbsp;Report</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>No.&nbsp;01</span>
+        <span class="dot" aria-hidden="true"></span>
+        <span>Financial&nbsp;Planning&nbsp;·&nbsp;Costing&nbsp;·&nbsp;Strategy</span>
+      </p>
+
+      <h1 class="cover__name">
+        <span class="line" data-seq="2"><span>Saurabh</span></span>
+        <span class="line line--2" data-seq="3"><span>Kashyap</span></span>
+      </h1>
+
+      <div class="cover__lower">
+        <p class="cover__deck" data-seq="4">
+          Analyst — financial planning &amp; analytics, costing &amp; budgeting.
+          Two engagements spent measuring the distance between what was planned
+          and what actually happened, naming the driver, and closing it inside
+          the cycle it appeared in.
+        </p>
+
+        <p class="cover__affil" data-seq="5">
+          <span>Indian Institute of Management, Shillong</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>B.M.S. Finance, Shaheed Sukhdev College of Business Studies, University of Delhi</span>
+        </p>
+
+        <dl class="cover__figs" data-seq="6">
+          <div><dt>Forecast accuracy</dt><dd><b data-count="92">92</b><i>%</i></dd></div>
+          <div><dt>Budget cycle compressed</dt><dd><b data-count="21">21</b><i>%</i></dd></div>
+          <div><dt>Annual savings identified</dt><dd><i class="pre">≈₹</i><b data-count="4">4</b><i>L</i></dd></div>
+        </dl>
+
+        <a class="cover__cue" href="#method" data-seq="7">
+          <span>Begin the report</span>
+          <svg viewBox="0 0 14 30" width="12" height="26" aria-hidden="true" focusable="false"><path d="M7 0v26M2 21l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <figure class="cover__portrait" data-seq="3">
+    <div class="cover__frame">
+      <picture>
+        <source type="image/webp" srcset="assets/portrait-560.webp 373w, assets/portrait-900.webp 599w, assets/portrait-1400.webp 933w" sizes="(max-width:959px) 100vw, min(33vw, 450px)">
+        <img src="assets/portrait-900.jpg"
+             srcset="assets/portrait-560.jpg 373w, assets/portrait-900.jpg 599w, assets/portrait-1400.jpg 933w"
+             sizes="(max-width:959px) 100vw, min(33vw, 450px)"
+             width="599" height="900" fetchpriority="high" decoding="async"
+             alt="Portrait of Saurabh Kashyap in a navy suit and dark tie, photographed outdoors against a hillside.">
+      </picture>
+      <span class="cover__ledger" aria-hidden="true"></span>
+      <span class="cover__crossrule" aria-hidden="true"></span>
+    </div>
+  </figure>
+</section>
+
+
+<!-- ═════════════════════════  01 · THE METHOD  ═════════════════════════ -->
+<section class="sec sec--paper" id="method" data-section data-bg="paper" aria-labelledby="method-h">
+  <div class="runhead"><i>§ 01</i><span>The Method</span></div>
+
+  <div class="wrap">
+    <div class="method">
+      <h2 class="sec__h" id="method-h" data-reveal>
+        Most numbers in a business<br>agree with each other.
+        <em>The&nbsp;useful work is in the ones that&nbsp;don't.</em>
+      </h2>
+
+      <div class="method__body">
+        <p class="lede" data-reveal>
+          Between April 2025 and June 2026, across two companies and two mandates,
+          the work took the same shape every time. Take the plan. Take the actual.
+          Measure the distance. Decompose it until a driver has a name — a mis-allocated
+          overhead, a component priced above market, a run-rate nobody re-based.
+          Then close it before the review cycle ends.
+        </p>
+        <p data-reveal>
+          Six business units. Five cost centres. Five product groups. Four verticals.
+          Three product lines. A fourteen-component bill of materials. The deviations
+          that came out of them were <b>8%</b> and <b>9%</b> — both isolated, both traced
+          to their cost drivers, both closed inside the cycle they surfaced in.
+        </p>
+      </div>
+
+      <ul class="method__marks" data-reveal>
+        <li><i>01</i>Decompose the driver</li>
+        <li><i>02</i>Isolate the deviation</li>
+        <li><i>03</i>Close it inside the cycle</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  02 · THE LEDGER  ═════════════════════════ -->
+<section class="sec sec--paper sec--ledger" id="ledger" data-section data-bg="paper" aria-labelledby="ledger-h">
+  <div class="runhead"><i>§ 02</i><span>The Ledger</span></div>
+
+  <div class="wrap">
+    <h2 class="sr-only" id="ledger-h">Industry interface — two analyst engagements</h2>
+
+    <!-- ── Statement A ── -->
+    <article class="stmt" data-reveal>
+      <header class="stmt__head">
+        <p class="stmt__no">Statement A</p>
+        <h3 class="stmt__co">Nucleus Microsystem <span>Pvt. Ltd.</span></h3>
+        <p class="stmt__role">Analyst — Financial Planning &amp; Analytics</p>
+        <p class="stmt__dates"><time datetime="2026-01">Jan 2026</time> — <time datetime="2026-06">Jun 2026</time></p>
+        <p class="stmt__mandate">
+          Forecast quarterly operating expense and revenue across three product lines,
+          and turn monthly reporting into something management could actually decide from.
+        </p>
+
+        <figure class="delta" data-delta style="--v:92">
+          <figcaption class="delta__cap">Forecasting accuracy versus actuals, by run-rate analysis</figcaption>
+          <div class="delta__bar"><span class="delta__seg delta__seg--hit"></span><span class="delta__seg delta__seg--var"></span></div>
+          <div class="delta__scale">
+            <span class="delta__hit"><b data-count="92">92</b><i>%</i> accurate</span>
+            <span class="delta__var"><b data-count="8">8</b><i>%</i> variance</span>
+          </div>
+        </figure>
+      </header>
+
+      <ol class="rows">
+        <li class="row">
+          <span class="row__fig">3</span>
+          <span class="row__txt">Forecast quarterly <abbr title="Operating expenses">OPEX</abbr> and revenue across all three distinct product lines, reaching <b>92% forecasting accuracy</b> against actuals through detailed run-rate analysis.</span>
+        </li>
+        <li class="row row--key">
+          <span class="row__fig">8<i>%</i></span>
+          <span class="row__txt">Isolated the budget-to-actual deviations across <b>6 business units</b> by rigorously decomposing cost drivers — enabling targeted corrective action <em>within the active review cycle</em>.</span>
+        </li>
+        <li class="row">
+          <span class="row__fig">4</span>
+          <span class="row__txt">Prepared monthly <abbr title="Management Information System">MIS</abbr> reports for four business verticals, converting KPI tracking into a standing management read on margin trends and underlying cost movements.</span>
+        </li>
+        <li class="row">
+          <span class="row__fig">15</span>
+          <span class="row__txt">Designed an Excel KPI dashboard mapping fifteen financial metrics to guide management reviews.</span>
+        </li>
+        <li class="row row--key">
+          <span class="row__fig">≈₹5<i>L</i></span>
+          <span class="row__txt">Evaluated key capex proposals on <b>ROI and payback</b>, converting every open capital spending request into a strategically ranked capital allocation call.</span>
+        </li>
+      </ol>
+    </article>
+
+    <!-- ── Statement B ── -->
+    <article class="stmt stmt--b" data-reveal>
+      <header class="stmt__head">
+        <p class="stmt__no">Statement B</p>
+        <h3 class="stmt__co">M2Cloud <span>LLP</span></h3>
+        <p class="stmt__role">Analyst — Costing &amp; Budgeting</p>
+        <p class="stmt__dates"><time datetime="2025-04">Apr 2025</time> — <time datetime="2025-10">Oct 2025</time></p>
+        <p class="stmt__mandate">
+          Correct distorted unit economics across a GPS hardware line, and
+          standardise the budgeting process behind it.
+        </p>
+
+        <figure class="delta" data-delta style="--v:91">
+          <figcaption class="delta__cap">Budget versus actual across five cost centres</figcaption>
+          <div class="delta__bar"><span class="delta__seg delta__seg--hit"></span><span class="delta__seg delta__seg--var"></span></div>
+          <div class="delta__scale">
+            <span class="delta__hit">on plan</span>
+            <span class="delta__var"><b data-count="9">9</b><i>%</i> deviation, surfaced early</span>
+          </div>
+        </figure>
+      </header>
+
+      <ol class="rows">
+        <li class="row row--key">
+          <span class="row__fig">≈6<i>%</i></span>
+          <span class="row__txt">Reallocated overhead charges across <b>4 GPS product SKUs</b> to correct distorted unit economics, reducing the structural blended per-unit expense across the line.</span>
+        </li>
+        <li class="row row--key">
+          <span class="row__fig">≈₹4<i>L</i></span>
+          <span class="row__txt">Benchmarked a <b>14-component bill of materials</b> against competitive supplier quotes, isolating projected annual savings in component-level pricing gaps.</span>
+        </li>
+        <li class="row">
+          <span class="row__fig">9<i>%</i></span>
+          <span class="row__txt">Tracked budget versus actual across five distinct cost centres, surfacing a deviation early enough to be corrected entirely within the financial quarter.</span>
+        </li>
+        <li class="row">
+          <span class="row__fig">2</span>
+          <span class="row__txt">Modelled <abbr title="Cost–volume–profit">CVP</abbr> for two new product lines at contribution-margin level to guide pricing floors.</span>
+        </li>
+        <li class="row row--key">
+          <span class="row__fig">21<i>%</i></span>
+          <span class="row__txt">Standardised core financial inputs across <b>5 product groups</b> into automated budgeting templates, compressing the overall budgeting cycle time.</span>
+        </li>
+      </ol>
+
+      <figure class="delta delta--wide" data-delta style="--v:79">
+        <figcaption class="delta__cap">Budgeting cycle time, after standardisation</figcaption>
+        <div class="delta__bar"><span class="delta__seg delta__seg--hit"></span><span class="delta__seg delta__seg--var"></span></div>
+        <div class="delta__scale">
+          <span class="delta__hit">cycle retained</span>
+          <span class="delta__var"><b data-count="21">21</b><i>%</i> removed</span>
+        </div>
+      </figure>
+    </article>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  03 · THE FIELD  ═════════════════════════ -->
+<section class="sec sec--ink sec--field" id="field" data-section data-bg="ink" aria-labelledby="field-h">
+  <div class="runhead"><i>§ 03</i><span>The Field</span></div>
+
+  <div class="wrap">
+    <header class="field__intro">
+      <h2 class="sec__h sec__h--ink" id="field-h" data-reveal>Against the field</h2>
+      <p class="lede lede--ink" data-reveal>
+        Case competitions and national selections are the only place a student profile
+        is marked against a measured population. These are the populations.
+      </p>
+    </header>
+
+    <ol class="fields">
+      <li class="fld" data-reveal>
+        <div class="fld__meta">
+          <span class="tag">2024</span>
+          <h3>Amazon ACE</h3>
+          <p>Campus Winner — ranked among the top performers.</p>
+        </div>
+        <div class="fld__viz">
+          <span class="fld__n" data-count="15390" data-suffix="+">15,390+</span>
+          <span class="fld__unit">teams in the field</span>
+          <span class="fld__stamp">Campus<br>Winner</span>
+        </div>
+      </li>
+
+      <li class="fld" data-reveal>
+        <div class="fld__meta">
+          <span class="tag">2026</span>
+          <h3>RPG Outperform</h3>
+          <p>National semi-finalist — top 109 teams, drawn across 20 campuses.</p>
+        </div>
+        <div class="fld__viz">
+          <span class="fld__n" data-count="6300" data-suffix="+">6,300+</span>
+          <span class="fld__unit">applicants</span>
+          <span class="fld__stamp">Top 109<br>teams</span>
+        </div>
+      </li>
+
+      <li class="fld" data-reveal>
+        <div class="fld__meta">
+          <span class="tag">2018</span>
+          <h3>Oxford University National Quiz</h3>
+          <p>Shortlisted to compete.</p>
+        </div>
+        <div class="fld__viz">
+          <span class="fld__n" data-count="1750" data-suffix="+">1,750+</span>
+          <span class="fld__unit">students</span>
+          <span class="fld__stamp">Short-<br>listed</span>
+        </div>
+      </li>
+
+      <li class="fld" data-reveal>
+        <div class="fld__meta">
+          <span class="tag">2017</span>
+          <h3>Oxford University National Quiz</h3>
+          <p>Finished seventh.</p>
+        </div>
+        <div class="fld__viz">
+          <span class="fld__n" data-count="120" data-suffix="+">120+</span>
+          <span class="fld__unit">participants</span>
+          <span class="fld__stamp">7th</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  04 · INSTRUMENTS  ═════════════════════════ -->
+<section class="sec sec--paper sec--inst" id="instruments" data-section data-bg="paper" aria-labelledby="inst-h">
+  <div class="runhead"><i>§ 04</i><span>Instruments</span></div>
+
+  <div class="wrap">
+    <h2 class="sec__h" id="inst-h" data-reveal>Instruments<em>&amp; the second toolkit</em></h2>
+
+    <div class="inst">
+      <div class="inst__col" data-reveal>
+        <p class="inst__label">Finance &amp; analysis</p>
+        <ul class="inst__list">
+          <li>Financial Modeling</li>
+          <li>Bloomberg</li>
+          <li>Excel</li>
+          <li>Power BI</li>
+        </ul>
+      </div>
+
+      <div class="inst__col inst__col--alt" data-reveal>
+        <p class="inst__label">Media &amp; digital</p>
+        <ul class="inst__list">
+          <li>Photoshop</li>
+          <li>DaVinci Resolve</li>
+          <li>SEO</li>
+          <li>GEO</li>
+        </ul>
+      </div>
+
+      <div class="inst__certs" data-reveal>
+        <p class="inst__label">Certification</p>
+        <ol class="certs">
+          <li><span class="certs__yr">2026</span><span class="certs__ttl">J.P. Morgan Chase — Investment Banking Simulation</span><span class="certs__note">Built DCF models for target valuations</span></li>
+          <li><span class="certs__yr">2026</span><span class="certs__ttl">BCG — Strategy Consulting Job Simulation</span><span class="certs__note">Market research and data analysis</span></li>
+          <li><span class="certs__yr">2022</span><span class="certs__ttl">Financial Modelling &amp; Valuation</span><span class="certs__note">Advanced financial analysis techniques</span></li>
+          <li><span class="certs__yr">2022</span><span class="certs__ttl">Microsoft Excel — Beginner to Advanced</span><span class="certs__note">Formulas and analytical techniques</span></li>
+          <li><span class="certs__yr">2022</span><span class="certs__ttl">HIIT — Search Engine Optimisation</span><span class="certs__note">Optimisation strategies for digital visibility</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  05 · ORIGIN  ═════════════════════════ -->
+<section class="sec sec--ink sec--origin" id="origin" data-section data-bg="ink" aria-labelledby="origin-h">
+  <div class="runhead"><i>§ 05</i><span>Origin</span></div>
+
+  <div class="wrap">
+    <div class="origin">
+      <p class="origin__year" aria-hidden="true">2019</p>
+
+      <div class="origin__lead">
+        <p class="tag tag--ink" data-reveal>Founder · Apr 2019 — Dec 2019</p>
+        <h2 class="sec__h sec__h--ink" id="origin-h" data-reveal>Ethereal<em>St. Columba's Dance Society</em></h2>
+        <p class="lede lede--ink" data-reveal>
+          Before any of the cost centres, there was a society that did not exist yet,
+          an eight-person core team, and a budget of over three lakh rupees to allocate
+          across events. The first ledger he balanced was not a company's.
+        </p>
+      </div>
+
+      <ol class="origin__rows" data-reveal>
+        <li><span class="row__fig">8</span><span class="row__txt">Founded and led an eight-member core team across <b>8+ state-level competitions</b>, securing top ranks.</span></li>
+        <li><span class="row__fig">₹3L<i>+</i></span><span class="row__txt">Managed budgeting and resource allocation across events, with cost efficiency held as the constraint.</span></li>
+        <li><span class="row__fig">160<i>+</i></span><span class="row__txt">Organised two state-level dance competitions, liaising with participants, <b>12 judges</b> and <b>5 venue coordinators</b> to keep execution seamless.</span></li>
+        <li><span class="row__fig">5</span><span class="row__txt">Directed five-plus choreographies, winning <b>five state-level titles inside a three-month window</b>.</span></li>
+      </ol>
+
+      <ul class="origin__misc" data-reveal>
+        <li><i>2019</i>First place in five and second place in two state-level dance competitions.</li>
+        <li><i>2019</i>First place in two cricket tournaments, against 11 teams and 110+ players.</li>
+        <li><i>2019</i>Completed a 20-hour workshop by Kings United India over two days at IIT Delhi.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  06 · THE RECORD  ═════════════════════════ -->
+<section class="sec sec--paper sec--record" id="record" data-section data-bg="paper" aria-labelledby="record-h">
+  <div class="runhead"><i>§ 06</i><span>The Record</span></div>
+
+  <div class="wrap">
+    <h2 class="sec__h" id="record-h" data-reveal>The record<em>plainly stated</em></h2>
+
+    <div class="record" data-reveal>
+      <div class="record__main">
+        <p class="record__current">
+          <span class="record__currentLabel">Present</span>
+          <span class="record__currentName">Indian Institute of Management, Shillong</span>
+        </p>
+
+      <table class="tbl">
+        <caption class="sr-only">Educational qualifications</caption>
+        <thead>
+          <tr><th scope="col">Qualification</th><th scope="col">Institution</th><th scope="col" class="num">Score</th><th scope="col" class="num">Year</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">B.M.S. (3 year), Finance</th>
+            <td>Shaheed Sukhdev College of Business Studies, University of Delhi</td>
+            <td class="num">62.57%</td>
+            <td class="num">2026</td>
+          </tr>
+          <tr>
+            <th scope="row">Class XII, CBSE</th>
+            <td>St. Columba's School, New Delhi</td>
+            <td class="num">79.20%</td>
+            <td class="num">2020</td>
+          </tr>
+          <tr>
+            <th scope="row">Class X, CBSE</th>
+            <td>St. Columba's School, New Delhi</td>
+            <td class="num">75.60%</td>
+            <td class="num">2018</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <aside class="record__side">
+        <p class="inst__label">Social initiative</p>
+        <p class="record__svc">
+          <b>72 hours over 12 days</b> volunteered at the Kranti Foundation,
+          aiding 30+ underprivileged people.
+        </p>
+        <p class="record__yr">2023</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═════════════════════════  07 · COLOPHON  ═════════════════════════ -->
+<footer class="sec sec--ink sec--colophon" id="colophon" data-section data-bg="ink" aria-labelledby="colophon-h">
+  <div class="runhead"><i>§ 07</i><span>Colophon</span></div>
+
+  <div class="wrap">
+    <div class="colophon__top">
+      <h2 class="colophon__h" id="colophon-h" data-reveal>
+        <span>Available for</span>
+        <em>finance, strategy<br>&amp; consulting roles</em>
+      </h2>
+
+      <figure class="signoff" data-reveal>
+        <picture>
+          <source type="image/webp" srcset="assets/portrait-560.webp">
+          <img src="assets/portrait-560.jpg" width="373" height="560" loading="lazy" decoding="async"
+               alt="Saurabh Kashyap.">
+        </picture>
+        <figcaption>Saurabh&nbsp;Kashyap<span>The Variance Report, No.&nbsp;01</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="colophon__act" data-reveal>
+      <a class="btn btn--solid" href="mailto:saurabhkashyap2411@gmail.com">
+        saurabhkashyap2411@gmail.com
+        <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M2 4h12v8H2z M2 4l6 4.5L14 4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--ghostink" href="assets/Saurabh-Kashyap-Resume.pdf" download>
+        Download the résumé
+        <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true" focusable="false"><path d="M8 1v10M4 7.5 8 11.5l4-4M2 14.5h12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+      </a>
+    </div>
+
+    <dl class="colophon__meta" data-reveal>
+      <div><dt>Languages</dt><dd>Hindi · English</dd></div>
+      <div><dt>Interests</dt><dd>Astronomy · Running · Swimming · Beatboxing · Typing · Reading</dd></div>
+      <div><dt>Institutions</dt><dd>University of Delhi · IIM Shillong</dd></div>
+    </dl>
+
+    <p class="colophon__fine" data-reveal>
+      <span>The Variance Report — No. 01</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>Set in Bodoni Moda, Archivo and IBM Plex Mono</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>All figures as stated on the résumé of record</span>
+    </p>
+  </div>
+</footer>
+
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>
